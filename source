@@ -1,0 +1,56 @@
+local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/Rayfield/main/source'))()
+getgenv().SecureMode = true
+
+
+local Window = Rayfield:CreateWindow({
+	Name = "Local Script",
+	LoadingTitle = "Local Script, Some Scripts Are Collected To Make It Easier",
+	LoadingSubtitle = "By VinTM",
+})
+
+--Script
+local TabScript = Window:CreateTab("Script")
+local Label = TabScript:CreateLabel("Thanks for using this Script, Enjoy")
+local Section = TabScript:CreateSection("Some Script :")
+--Credit
+local TabCredit = Window:CreateTab("Credit")
+local SectionUtil = TabCredit:CreateSection("Credit")
+local Paragraph = TabCredit:CreateParagraph({Title = "Crate This Script :", Content = "VinTM"})
+local Paragraph = TabCredit:CreateParagraph({Title = "User Name Roblox :", Content = "Kevinalsteviaa"})
+--Setting
+local TabSetting = Window:CreateTab("Setting")
+local SectionUtil = TabSetting:CreateSection("Change Keybind")
+local ButtonDestroy = TabSetting:CreateButton({
+	Name = "Close ( Is Make This UI Destroy )",
+	Callback = function()
+		Rayfield:Destroy()
+	end,
+}) --Close
+
+--Value
+local Button = TabScript:CreateButton({
+	Name = "Infinite Yield",
+	Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source",true))()
+	end,
+}) --Infinite Yield
+local Button = TabScript:CreateButton({
+	Name = "All In One Hub (Doors)",
+	Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/UltraStuff/scripts2/main/doors"))()
+	end,
+}) --Doors
+local Button = TabScript:CreateButton({
+	Name = "Evade",
+	Callback = function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/9Strew/roblox/main/gamescripts/evade.lua'))()
+	end,
+}) --Evade
+local Button = TabScript:CreateButton({
+	Name = "Arsenal",
+	Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/KeoneGithub/KeoneGithub/main/Arsenal",true))()
+	end,
+}) --Arsenal
+
+local SectionUtil = TabScript:CreateSection("Wait for update.")
