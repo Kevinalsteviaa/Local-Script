@@ -17,6 +17,8 @@ local TabCredit = Window:CreateTab("Credit")
 local SectionUtil = TabCredit:CreateSection("Credit")
 local Paragraph = TabCredit:CreateParagraph({Title = "Crate This Script :", Content = "VinTM"})
 local Paragraph = TabCredit:CreateParagraph({Title = "User Name Roblox :", Content = "Kevinalsteviaa"})
+local SectionUtil = TabCredit:CreateSection("")
+local Paragraph = TabCredit:CreateParagraph({Title = "Helper Name :", Content = "There isn't any ;-;"})
 --Setting
 local TabSetting = Window:CreateTab("Setting")
 local SectionUtil = TabSetting:CreateSection("Change Keybind")
